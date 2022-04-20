@@ -1,0 +1,11 @@
+{
+    "development":{
+        "username":"root",
+        "database":"relevel",
+        "password":"9263612865",
+        "dialectinfo":{
+            "dialect":"mysql",
+            "host":"localhost"
+        }
+    }
+}
