@@ -54,7 +54,7 @@ exports.signin=(req,res)=>{
         }
     }).then(user=>{
         if(!user){
-            return res.send(400).send({message:"The username is wrong"})
+            return res.status(400).send({message:"The username is wrong"})
         }
         console.log("***********************************")
         var isvalidpassword=bcrypt.compareSync(req.body.password,user.password)

@@ -40,7 +40,7 @@ exports.update=(req,res)=>{
 exports.delete = (req, res)=> {
     const productid = req.params.id;
     Product.destroy({ where: { id: productid } }).then(resp => {
-        res.sendStatus(200).send(resp);
+        res.sendStatus(200).send("ok");
     }).catch(err => {
         res.sendStatus(500).send({
             message: "There Was an error from our side while deleting the product"

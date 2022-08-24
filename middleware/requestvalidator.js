@@ -9,7 +9,7 @@ const validcategory=(req,res,next)=>{
     }next()
 }
 
-const validproductreq=(req,res)=>{
+const validproductreq=(req,res,next)=>{
     if(!req.body.name || !req.body.price){
         res.status(400).send({
             message:"The name and price cant be empty"

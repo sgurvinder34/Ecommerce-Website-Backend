@@ -5,7 +5,7 @@ const db=require("./models/index.js")
 const bodyparser=require("body-parser")
 app.use(bodyparser.urlencoded({extended:true}))
 app.use(bodyparser.json())
- function init(){
+function init(){
     var categoriesData = [
         {name: "Electronics", 
         description: "This category contains electrical appliances"},
@@ -29,7 +29,7 @@ app.use(bodyparser.json())
     })
 
 
- }
+}
  
 
 db.category.hasMany(db.product);
